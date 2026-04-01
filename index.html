@@ -614,6 +614,160 @@
     margin-top: 16px;
   }
 
+  /* ─── FEATURE GRID ─── */
+  .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+    margin: 24px 0;
+  }
+
+  .feature-card {
+    background: var(--paper);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 24px;
+  }
+
+  .feature-card .feature-title {
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--ink);
+    margin-bottom: 8px;
+  }
+
+  .feature-card p {
+    font-size: 14px;
+    color: var(--ink-light);
+    line-height: 1.6;
+  }
+
+  /* ─── DATA TABLE ─── */
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin: 24px 0;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .data-table thead th {
+    background: #fafafa;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--ink-muted);
+    padding: 14px 16px;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .data-table tbody td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #f5f5f5;
+    color: var(--ink-light);
+  }
+
+  .data-table tbody tr:last-child td { border-bottom: none; }
+
+  /* ─── SCREEN SPEC ─── */
+  .screen-spec {
+    background: var(--paper);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 32px;
+    margin: 24px 0;
+    position: relative;
+  }
+
+  .screen-spec .screen-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 4px;
+  }
+
+  .screen-spec .screen-role {
+    font-size: 13px;
+    color: var(--ink-muted);
+    font-style: italic;
+    margin-bottom: 16px;
+  }
+
+  .screen-spec ul {
+    padding-left: 20px;
+    margin: 0;
+  }
+
+  .screen-spec li {
+    font-size: 14px;
+    color: var(--ink-light);
+    margin-bottom: 6px;
+  }
+
+  /* ─── WEEK BLOCK ─── */
+  .week-block {
+    background: var(--paper);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin: 12px 0;
+  }
+
+  .week-block .week-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 6px;
+  }
+
+  .week-block .week-title {
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--ink);
+    margin-bottom: 8px;
+  }
+
+  .week-block ul {
+    padding-left: 20px;
+    margin: 0;
+  }
+
+  .week-block li {
+    font-size: 13px;
+    color: var(--ink-light);
+    margin-bottom: 4px;
+  }
+
+  /* ─── COMPETITIVE HIGHLIGHT ─── */
+  .competitive-highlight {
+    background: linear-gradient(135deg, var(--accent-light) 0%, var(--gold-light) 100%);
+    border: 1px solid rgba(196,101,74,0.15);
+    border-radius: 12px;
+    padding: 24px;
+    margin: 16px 0;
+    text-align: center;
+  }
+
+  .competitive-highlight .highlight-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--accent);
+  }
+
+  .competitive-highlight .highlight-label {
+    font-size: 13px;
+    color: var(--ink-muted);
+    margin-top: 4px;
+  }
+
   /* ─── RESPONSIVE ─── */
   @media (max-width: 600px) {
     .content { padding: 40px 16px; }
@@ -659,7 +813,7 @@
       </div>
       <div class="cover-meta-item">
         <div class="label">Version</div>
-        <div class="value">2.0</div>
+        <div class="value">3.0</div>
       </div>
     </div>
   </div>
@@ -678,12 +832,16 @@
       <li><a href="#s2">Les 3 regles fondamentales du produit</a></li>
       <li><a href="#s3">Ce qui existe deja. Les fondations</a></li>
       <li><a href="#s4">Architecture technique</a></li>
-      <li><a href="#s5">Feuille de route detaillee, 12 mois</a></li>
-      <li><a href="#s6">Positionnement concurrentiel</a></li>
-      <li><a href="#s7">Strategie de scaling & croissance</a></li>
-      <li><a href="#s8">Equipe, coordination & EAT</a></li>
-      <li><a href="#s9">Budget & investissements</a></li>
-      <li><a href="#s10">Prochaines etapes immediates</a></li>
+      <li><a href="#s5">Experience utilisateur detaillee, ecran par ecran</a></li>
+      <li><a href="#s6">Design : principes, references et direction artistique</a></li>
+      <li><a href="#s7">Differenciation vs marche, analyse concurrentielle exhaustive</a></li>
+      <li><a href="#s8">Feuille de route detaillee, 12 mois</a></li>
+      <li><a href="#s9">Feuille de route technique detaillee, semaine par semaine</a></li>
+      <li><a href="#s10">Modele economique et route vers 1M EUR ARR</a></li>
+      <li><a href="#s11">Strategie de scaling & croissance</a></li>
+      <li><a href="#s12">Equipe, coordination & EAT</a></li>
+      <li><a href="#s13">Budget & investissements</a></li>
+      <li><a href="#s14">Prochaines etapes immediates</a></li>
     </ol>
   </nav>
 
@@ -892,6 +1050,57 @@
       <p><strong>Zero inscription :</strong> La premiere capture fonctionne sans compte. Le compte est propose apres la 3e capture, quand l'utilisateur a deja de la valeur stockee.</p>
     </div>
 
+    <h4>Matrice zero friction par plateforme</h4>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Plateforme</th>
+            <th>Point d'entree</th>
+            <th>Geste utilisateur</th>
+            <th>Resultat</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>iOS</strong></td>
+            <td>Share Sheet (menu Partager natif)</td>
+            <td>Voir recette, appuyer Partager, choisir SANZIA</td>
+            <td>Recette capturee en arriere-plan, notification quand prete</td>
+          </tr>
+          <tr>
+            <td><strong>Android</strong></td>
+            <td>Share Sheet (intent Android)</td>
+            <td>Identique a iOS, meme geste universel</td>
+            <td>Recette dans le Book en &lt;30 secondes</td>
+          </tr>
+          <tr>
+            <td><strong>Desktop Chrome</strong></td>
+            <td>Extension navigateur, bouton flottant</td>
+            <td>Le bouton apparait automatiquement sur toute page recette</td>
+            <td>Un clic = sauvegarde + sync mobile instantanee</td>
+          </tr>
+          <tr>
+            <td><strong>Desktop Safari</strong></td>
+            <td>Extension Safari, bouton flottant</td>
+            <td>Detection automatique schema.org + heuristique AI</td>
+            <td>Synchronisation temps reel avec l'app mobile</td>
+          </tr>
+          <tr>
+            <td><strong>Web (tout site)</strong></td>
+            <td>URL copiee-collee dans SANZIA</td>
+            <td>Coller un lien de recette depuis n'importe quelle source</td>
+            <td>Extraction AI automatique, quelle que soit la structure du site</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="vision-quote">
+      <p>&laquo; Voir une recette, c'est voir SANZIA. Ce n'est pas une fonctionnalite. C'est un reflexe. &raquo;</p>
+      <div class="attribution">Nicolas Bertin, Principe fondateur, 30 mars 2026</div>
+    </div>
+
     <div class="rule-block">
       <div class="rule-number">02</div>
       <div class="rule-title">Capture universelle, absolument tout</div>
@@ -902,17 +1111,119 @@
 
     <div class="response">
       <div class="response-label">Implementation technique</div>
-      <p><strong>10 sources de capture :</strong></p>
-      <p>1. <strong>URL</strong> : Extraction structuree (schema.org, microdata, heuristique AI) depuis tout site web<br>
-      2. <strong>Reseaux sociaux</strong> : Instagram, TikTok, YouTube, Pinterest, Facebook via deep link + API<br>
-      3. <strong>Video</strong> : Extraction audio (Deepgram STT) + analyse visuelle (AI Vision avancee) des videos YouTube et TV<br>
-      4. <strong>Photo</strong> : OCR + AI Vision pour livres, magazines, dos de paquet, menus restaurant<br>
-      5. <strong>PDF</strong> : Extraction structuree de documents cuisines (livres numeriques, fiches PDF)<br>
-      6. <strong>Manuscrit</strong> : Reconnaissance d'ecriture manuscrite (carnet de grand-mere, notes griffonnees)<br>
-      7. <strong>Dictee vocale</strong> : L'utilisateur dicte une recette, l'AI structure automatiquement<br>
-      8. <strong>Menu restaurant</strong> : Scan de carte, extraction des plats, creation de fiche restaurant<br>
-      9. <strong>Plat a table</strong> : Photo d'un plat servi = identification + recette "inspiree par"<br>
-      10. <strong>Partage entrant</strong> : Un ami envoie un lien = capture en un tap depuis n'importe quelle app de messagerie</p>
+      <p><strong>13 sources de capture, categorie par categorie :</strong></p>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th style="width:5%">#</th>
+            <th style="width:20%">Source</th>
+            <th style="width:30%">Methode technique</th>
+            <th style="width:25%">Exemples concrets</th>
+            <th style="width:20%">Phase</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td><strong>URL / Site web</strong></td>
+            <td>schema.org, microdata, JSON-LD, heuristique AI fallback</td>
+            <td>Marmiton, AllRecipes, 750g, blogs culinaires</td>
+            <td>Phase 1</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><strong>Reseaux sociaux</strong></td>
+            <td>Deep link + API + scraping intelligent</td>
+            <td>Instagram posts/stories, TikTok, Pinterest, Facebook</td>
+            <td>Phase 2</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td><strong>Video YouTube</strong></td>
+            <td>Extraction audio (Deepgram STT) + AI Vision frame-by-frame</td>
+            <td>Tutoriels de cuisine, chaines culinaires, lives</td>
+            <td>Phase 2</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td><strong>Video TikTok / Reels</strong></td>
+            <td>Telechargement + extraction audio + texte a l'ecran (OCR)</td>
+            <td>Recettes rapides en 60 secondes, tendances virales</td>
+            <td>Phase 2</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td><strong>Photo de livre / magazine</strong></td>
+            <td>OCR haute precision + AI Vision structuration</td>
+            <td>Livre de Cyril Lignac, Elle a table, Saveurs</td>
+            <td>Phase 1</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td><strong>PDF</strong></td>
+            <td>MuPDF extraction + GPT Vision pour layouts complexes</td>
+            <td>E-books culinaires, fiches PDF telechargees, formations</td>
+            <td>Phase 1</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td><strong>Forums / communautes</strong></td>
+            <td>Extraction de texte non structure via NLP culinaire</td>
+            <td>Reddit r/cooking, Marmiton forum, Supertoinette</td>
+            <td>Phase 2</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td><strong>Ecriture manuscrite</strong></td>
+            <td>OCR manuscrit avance + comprehension contextuelle AI</td>
+            <td>Carnet de grand-mere, notes griffonnees, fiches papier</td>
+            <td>Phase 3</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td><strong>Emballage alimentaire</strong></td>
+            <td>Photo du dos de paquet, extraction recette imprimee</td>
+            <td>Recette au dos d'un paquet de pates, cereales, conserves</td>
+            <td>Phase 1</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td><strong>Menu de restaurant</strong></td>
+            <td>OCR + detection nom restaurant, adresse, geolocalisation</td>
+            <td>Carte de restaurant, menu du jour, ardoise</td>
+            <td>Phase 3</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td><strong>Plat a table</strong></td>
+            <td>Photo du plat = identification AI + recette "inspiree par"</td>
+            <td>Photo au restaurant, chez des amis, lors d'un voyage</td>
+            <td>Phase 3</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td><strong>Emission TV / streaming</strong></td>
+            <td>Capture ecran + extraction audio + structuration AI</td>
+            <td>Top Chef, Le Meilleur Patissier, MasterChef, Norbert</td>
+            <td>Phase 3</td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td><strong>Dictee vocale</strong></td>
+            <td>STT (Deepgram) + structuration automatique AI</td>
+            <td>L'utilisateur dicte sa recette familiale oralement</td>
+            <td>Phase 3</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="vision-quote">
+      <p>&laquo; Si tu peux le voir, SANZIA peut le capturer. &raquo;</p>
+      <div class="attribution">Nicolas Bertin, Principe fondateur no2, 30 mars 2026</div>
     </div>
 
     <div class="rule-block">
@@ -928,6 +1239,68 @@
       <p><strong>Capture en arriere-plan :</strong> L'utilisateur partage un lien et retourne immediatement a ce qu'il faisait. SANZIA traite en arriere-plan (extraction AI, normalisation, enrichissement nutritionnel, traduction) et envoie une notification quand la recette est prete dans son Book.</p>
       <p><strong>Temps cible :</strong> &lt;3 secondes entre le tap "Partager" et le retour a l'app d'origine. Traitement complet en &lt;30 secondes en arriere-plan.</p>
       <p><strong>Zero configuration :</strong> Pas de compte requis. Pas de choix de langue initiale obligatoire (detection automatique). Pas de tutoriel force. L'app fonctionne des le premier contact.</p>
+    </div>
+
+    <h4>Chronologie de l'instantaneite</h4>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Etape</th>
+            <th>Temps cible</th>
+            <th>Ce que voit l'utilisateur</th>
+            <th>Ce qui se passe en arriere-plan</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Tap "Partager"</td>
+            <td>0 seconde</td>
+            <td>SANZIA apparait dans le Share Sheet</td>
+            <td>Interception du lien/contenu</td>
+          </tr>
+          <tr>
+            <td>Tap "SANZIA"</td>
+            <td>&lt;1 seconde</td>
+            <td>Animation de confirmation, retour a l'app d'origine</td>
+            <td>Envoi en file d'attente de traitement</td>
+          </tr>
+          <tr>
+            <td>Extraction</td>
+            <td>5-15 secondes</td>
+            <td>Rien (l'utilisateur est retourne a son activite)</td>
+            <td>AI extraction du contenu, OCR si photo, STT si video</td>
+          </tr>
+          <tr>
+            <td>Normalisation</td>
+            <td>15-25 secondes</td>
+            <td>Rien</td>
+            <td>Structuration ingredients, etapes, portions, tags</td>
+          </tr>
+          <tr>
+            <td>Enrichissement</td>
+            <td>25-30 secondes</td>
+            <td>Rien</td>
+            <td>Nutrition (CIQUAL), cout, CO2, allergenes</td>
+          </tr>
+          <tr>
+            <td>Notification</td>
+            <td>&lt;30 secondes</td>
+            <td>Notification push : "Votre recette est prete"</td>
+            <td>Recette complete dans le Book, prete a cuisiner</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="vision-quote">
+      <p>&laquo; Tu vois. Tu captures. SANZIA s'occupe du reste. Pas de compte. Pas de configuration. Pas de reflexion. &raquo;</p>
+      <div class="attribution">Nicolas Bertin, Principe fondateur no3, 30 mars 2026</div>
+    </div>
+
+    <div class="response">
+      <div class="response-label">Ce que cela change concretement</div>
+      <p>Aucun concurrent ne fonctionne ainsi. Citron demande d'ouvrir l'app. Paprika demande de coller un lien dans un champ. Samsung Food demande de naviguer dans un catalogue. SANZIA existe <strong>la ou l'utilisateur est deja</strong>, au moment ou il voit la recette. L'app ne demande rien. Elle donne immediatement.</p>
     </div>
   </section>
 
@@ -1003,16 +1376,32 @@
 
     <div class="stat-grid">
       <div class="stat-box">
-        <div class="number">1,34M</div>
-        <div class="unit">recettes en base</div>
+        <div class="number">1,388M</div>
+        <div class="unit">recettes en base (verifie 1er avril 2026)</div>
       </div>
       <div class="stat-box">
-        <div class="number">286</div>
+        <div class="number">130</div>
         <div class="unit">pays representes</div>
       </div>
       <div class="stat-box">
-        <div class="number">1 904</div>
-        <div class="unit">ingredients prices (T1)</div>
+        <div class="number">23 376</div>
+        <div class="unit">ingredients maitre</div>
+      </div>
+      <div class="stat-box">
+        <div class="number">12 143</div>
+        <div class="unit">ingredients avec prix</div>
+      </div>
+      <div class="stat-box">
+        <div class="number">95%</div>
+        <div class="unit">couverture nutrition (CIQUAL)</div>
+      </div>
+      <div class="stat-box">
+        <div class="number">516K+</div>
+        <div class="unit">recettes avec images (37,6%)</div>
+      </div>
+      <div class="stat-box">
+        <div class="number">14</div>
+        <div class="unit">allergenes detectes (EU 1169/2011)</div>
       </div>
       <div class="stat-box">
         <div class="number">36</div>
@@ -1075,12 +1464,52 @@
           <tr>
             <td>Pipeline de scraping multi-sites</td>
             <td>Production</td>
-            <td>Alimentation continue de la base</td>
+            <td>Alimentation continue de la base (36 sites actifs)</td>
+          </tr>
+          <tr>
+            <td>Detection de 14 allergenes (EU 1169/2011)</td>
+            <td>Production</td>
+            <td>Gluten, crustaces, oeufs, poisson, arachides, soja, lait, fruits a coque, celeri, moutarde, sesame, sulfites, lupin, mollusques</td>
+          </tr>
+          <tr>
+            <td>Scoring GEMRCN</td>
+            <td>En cours</td>
+            <td>Conformite reglementaire pour restauration collective</td>
+          </tr>
+          <tr>
+            <td>Score CO2 / environnemental (Agribalyse)</td>
+            <td>En cours</td>
+            <td>Impact carbone par ingredient et par recette</td>
+          </tr>
+          <tr>
+            <td>Pipeline extraction PDF (MuPDF + GPT Vision)</td>
+            <td>Production</td>
+            <td>Extraction automatique de livres de cuisine numeriques</td>
+          </tr>
+          <tr>
+            <td>Scan photo / OCR + AI Vision</td>
+            <td>Production</td>
+            <td>Capture de pages de livres, magazines, emballages</td>
+          </tr>
+          <tr>
+            <td>Multi-langue (FR/EN/ES/PT)</td>
+            <td>Production</td>
+            <td>4 langues actives dans la base, architecture i18n prete</td>
+          </tr>
+          <tr>
+            <td>OptiMenu avec generation AI (Claude API)</td>
+            <td>Production</td>
+            <td>Planification de menus intelligente, contraintes nutritionnelles</td>
+          </tr>
+          <tr>
+            <td>Moteur de calcul de couts (prix fournisseurs)</td>
+            <td>Operationnel</td>
+            <td>Cout par portion avec donnees fournisseurs reelles</td>
           </tr>
           <tr>
             <td>Hebergement Railway</td>
             <td>Production</td>
-            <td>Infrastructure serveur prete, scalable</td>
+            <td>Infrastructure serveur prete, scalable, PostgreSQL manage</td>
           </tr>
         </tbody>
       </table>
@@ -1258,10 +1687,748 @@
   <div class="divider"></div>
 
   <!-- ──────────────────────────────────────────────────────────
-       SECTION 5: FEUILLE DE ROUTE
+       SECTION 5: EXPERIENCE UTILISATEUR DETAILLEE
        ────────────────────────────────────────────────────────── -->
   <section class="section" id="s5">
     <div class="section-number">Section 05</div>
+    <h2>Experience utilisateur detaillee, ecran par ecran</h2>
+
+    <p>
+      Chaque ecran de SANZIA est specifie ici avec son objectif, ses composants, ses interactions et son role dans le parcours global. L'utilisateur ne doit jamais se poser la question "que faire maintenant ?". Chaque ecran repond a un besoin precis et guide vers l'action suivante.
+    </p>
+
+    <!-- ONBOARDING -->
+    <h3>1. Onboarding (3 ecrans maximum)</h3>
+    <p>L'onboarding SANZIA est le plus court possible. Pas de tutoriel, pas de carousel de 7 slides. Trois ecrans, trois decisions, et l'utilisateur est dans l'app.</p>
+
+    <div class="screen-spec">
+      <div class="screen-name">Ecran 1 : Selection de la langue</div>
+      <div class="screen-role">Premiere impression, personnalisation immediate</div>
+      <ul>
+        <li><strong>Detection automatique</strong> depuis la langue de l'appareil (Expo Localization)</li>
+        <li><strong>Langues disponibles au lancement :</strong> Francais, English, Espanol, Arabe</li>
+        <li>L'utilisateur peut changer, mais la suggestion automatique est juste dans 95% des cas</li>
+        <li>Design sobre : logo SANZIA, une question, un choix. Rien d'autre.</li>
+      </ul>
+    </div>
+
+    <div class="screen-spec">
+      <div class="screen-name">Ecran 2 : "Pour qui cuisinez-vous ?"</div>
+      <div class="screen-role">Personnalisation du contenu et des suggestions</div>
+      <ul>
+        <li><strong>Selection multiple</strong> (pas simple, retour de Jerome) : "Pour moi", "Pour mon couple", "Pour ma famille", "Pour mes amis", "Pour mes enfants", "Professionnellement"</li>
+        <li>Chaque choix influence les suggestions : taille des portions, types de recettes, niveau de complexite</li>
+        <li>L'utilisateur peut selectionner plusieurs reponses simultanement</li>
+        <li>Illustrations chaudes et accueillantes, pas de cliparts</li>
+      </ul>
+    </div>
+
+    <div class="screen-spec">
+      <div class="screen-name">Ecran 3 : Niveau de cuisine + introduction du Chef</div>
+      <div class="screen-role">Calibration pedagogique et introduction du guide</div>
+      <ul>
+        <li><strong>4 niveaux :</strong> Debutant / Intermediaire / Avance / Expert</li>
+        <li><strong>Introduction de "Le Chef"</strong> (retour de Jerome) : le personnage guide qui accompagne l'utilisateur des le debut</li>
+        <li>Le Chef dit : "Bienvenue ! Je suis votre guide culinaire. Quel est votre niveau ?"</li>
+        <li>Transition directe vers la homepage apres ce choix, zero delai supplementaire</li>
+      </ul>
+    </div>
+
+    <div class="vision-quote">
+      <p>&laquo; Pas de tutoriel force. L'app fonctionne des le premier contact. En moins de 30 secondes, l'utilisateur doit etre dans l'action. &raquo;</p>
+      <div class="attribution">Nicolas Bertin, Principe d'instantaneite, 30 mars 2026</div>
+    </div>
+
+    <!-- HOMEPAGE -->
+    <h3>2. Homepage : UNE page, radicalement simplifiee</h3>
+
+    <div class="vision-quote">
+      <p>&laquo; Trop d'informations dilue l'impact. En moins de 30 secondes, l'utilisateur doit se dire : Je vais cuisiner ca. La. Maintenant. &raquo;</p>
+      <div class="attribution">Nicolas Bertin, Retour V12, 31 mars 2026</div>
+    </div>
+
+    <div class="screen-spec">
+      <div class="screen-name">Homepage SANZIA</div>
+      <div class="screen-role">Declencheur d'envie et point d'acces universel</div>
+      <ul>
+        <li><strong>Hero visuel puissant :</strong> une seule image de plat magnifique, plein ecran, avec un call-to-action unique</li>
+        <li><strong>3 boutons d'action capture :</strong> Scanner (camera), Importer (URL/lien), Mon Frigo (ingredients disponibles)</li>
+        <li><strong>Carte du monde</strong> comme element de navigation central : animee, les pays s'illuminent, compteurs de recettes visibles</li>
+        <li><strong>Recette du jour</strong> personnalisee selon le profil, la saison, l'heure de la journee</li>
+        <li><strong>Zero bruit :</strong> pas de banniere pub, pas de notifications promotionnelles, pas de carousel infini</li>
+        <li><strong>Navigation bottom tab :</strong> Accueil / Explorer / Scanner / Book / Profil</li>
+      </ul>
+    </div>
+
+    <div class="response">
+      <div class="response-label">Decision architecturale</div>
+      <p>UNE seule page d'accueil, pas deux onglets. La complexite est cachee derriere la carte du monde et le moteur de recherche. L'utilisateur voit : une envie, un moyen de capturer, un monde a explorer. Rien de plus.</p>
+    </div>
+
+    <!-- EXPLORE / WORLD MAP -->
+    <h3>3. Explorer / Carte du monde</h3>
+
+    <div class="screen-spec">
+      <div class="screen-name">Carte du monde interactive</div>
+      <div class="screen-role">Voyager et decouvrir les cuisines du monde</div>
+      <ul>
+        <li><strong>Carte animee :</strong> les pays s'illuminent au toucher, les compteurs de recettes apparaissent</li>
+        <li><strong>Clic sur un pays :</strong> affiche les cuisines regionales (ex: France = Bretagne, Provence, Alsace...)</li>
+        <li><strong>Clic sur une region :</strong> affiche les recettes emblematiques de cette region</li>
+        <li><strong>Sensation de voyage :</strong> "Je decouvre le monde a travers la cuisine" (mots de Nicolas)</li>
+        <li><strong>Filtres :</strong> par difficulte, temps de preparation, type de plat, regime alimentaire</li>
+        <li><strong>Donnees reelles :</strong> 130 pays representes, recettes authentiques de chaque region</li>
+        <li><strong>Recherche dans un pays :</strong> moteur de recherche contextuel une fois un pays selectionne</li>
+      </ul>
+    </div>
+
+    <!-- RECIPE DETAIL -->
+    <h3>4. Detail recette</h3>
+
+    <div class="screen-spec">
+      <div class="screen-name">Fiche recette complete</div>
+      <div class="screen-role">Tout savoir avant de cuisiner, comprendre POURQUOI</div>
+      <ul>
+        <li><strong>Hero image :</strong> photo du plat en plein ecran, parallax au scroll</li>
+        <li><strong>Informations cles :</strong> temps de preparation, temps de cuisson, difficulte, portions</li>
+        <li><strong>Ingredients :</strong> liste avec quantites, images de chaque ingredient, alternatives possibles</li>
+        <li><strong>Etapes pas a pas :</strong> chaque etape avec explication du POURQUOI (pas juste "melangez", mais "melangez pour incorporer de l'air et rendre la pate legere")</li>
+        <li><strong>Alternatives techniques :</strong> pour chaque etape, une version simplifiee ou une technique alternative</li>
+        <li><strong>Panel nutrition :</strong> calories, proteines, glucides, lipides, fibres par portion</li>
+        <li><strong>Score CO2 :</strong> impact environnemental Agribalyse</li>
+        <li><strong>Allergenes :</strong> detection automatique des 14 allergenes europeens</li>
+        <li><strong>Cout par portion :</strong> estimation basee sur les prix fournisseurs reels</li>
+        <li><strong>Recettes associees :</strong> "Si vous aimez ceci, essayez aussi..." (par similarite d'ingredients ou de cuisine)</li>
+        <li><strong>Bouton "Cuisiner" :</strong> lance le Mode Cuisiner directement</li>
+      </ul>
+    </div>
+
+    <!-- MODE CUISINER -->
+    <h3>5. Mode Cuisiner (ecran critique)</h3>
+
+    <div class="vision-quote">
+      <p>&laquo; L'app m'aide vraiment pendant que je cuisine. Les mains sont sales, le telephone est loin, et pourtant l'app me guide. &raquo;</p>
+      <div class="attribution">Nicolas Bertin, Retour Savora, 28 mars 2026</div>
+    </div>
+
+    <div class="screen-spec">
+      <div class="screen-name">Mode Cuisiner plein ecran</div>
+      <div class="screen-role">Assistance active pendant la preparation, mains libres</div>
+      <ul>
+        <li><strong>Plein ecran :</strong> fond sombre, texte tres grand, lisible a 2 metres de distance</li>
+        <li><strong>Navigation etape par etape :</strong> swipe gauche/droite ou commande vocale "etape suivante"</li>
+        <li><strong>Minuteurs par etape :</strong> chaque etape qui necessite un temps de cuisson ou de repos a son minuteur integre</li>
+        <li><strong>Minuteurs multiples simultanees :</strong> cuisson au four + sauce sur le feu + repos d'une pate</li>
+        <li><strong>Mains libres total :</strong> l'utilisateur ne touche PAS le telephone avec des mains sales</li>
+        <li><strong>Navigation gestuelle :</strong> geste large devant la camera (v2) ou proximite du capteur</li>
+        <li><strong>Commande vocale "OK Chef" :</strong> "etape suivante", "combien de temps ?", "repete", "minuteur 10 minutes"</li>
+        <li><strong>Alertes sonores :</strong> bip quand un minuteur est termine, rappel vocal de la prochaine action</li>
+        <li><strong>Mode veille empechee :</strong> l'ecran ne s'eteint jamais pendant le Mode Cuisiner</li>
+        <li><strong>Bouton d'urgence "Pause" :</strong> met tout en pause si le telephone sonne ou si l'utilisateur doit s'absenter</li>
+      </ul>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Commande vocale</th>
+            <th>Action</th>
+            <th>Version</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>"OK Chef, etape suivante"</td>
+            <td>Passe a l'etape suivante</td>
+            <td>v2 (Phase 2)</td>
+          </tr>
+          <tr>
+            <td>"OK Chef, repete"</td>
+            <td>Relit l'etape en cours a voix haute</td>
+            <td>v2</td>
+          </tr>
+          <tr>
+            <td>"OK Chef, minuteur 10 minutes"</td>
+            <td>Lance un minuteur de 10 minutes</td>
+            <td>v2</td>
+          </tr>
+          <tr>
+            <td>"OK Chef, combien de temps ?"</td>
+            <td>Annonce le temps restant sur les minuteurs actifs</td>
+            <td>v2</td>
+          </tr>
+          <tr>
+            <td>"OK Chef, ingredients"</td>
+            <td>Lit la liste des ingredients de l'etape en cours</td>
+            <td>v2</td>
+          </tr>
+          <tr>
+            <td>"OK Chef, pause"</td>
+            <td>Met tous les minuteurs en pause</td>
+            <td>v2</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- CAPTURE UNIVERSELLE -->
+    <h3>6. Capture universelle</h3>
+
+    <div class="screen-spec">
+      <div class="screen-name">Ecrans de capture</div>
+      <div class="screen-role">Importer une recette depuis n'importe quelle source</div>
+      <ul>
+        <li><strong>Share Sheet (iOS + Android) :</strong> l'utilisateur partage depuis n'importe quelle app et SANZIA apparait dans la liste. Un tap, retour a l'app d'origine. Traitement en arriere-plan.</li>
+        <li><strong>Coller une URL :</strong> champ texte sur l'ecran de capture, coller un lien, SANZIA extrait automatiquement</li>
+        <li><strong>Camera :</strong> prise de photo directe d'une page de livre, d'un emballage, d'un menu restaurant, d'une recette manuscrite</li>
+        <li><strong>Import video :</strong> coller un lien YouTube, TikTok ou Instagram Reel. SANZIA extrait l'audio, les visuels et structure la recette</li>
+        <li><strong>Import PDF :</strong> selection d'un fichier PDF depuis l'appareil, extraction automatique</li>
+        <li><strong>Traitement arriere-plan :</strong> l'utilisateur n'attend pas. Il partage et retourne a sa vie. SANZIA envoie une notification push quand la recette est prete dans son Book.</li>
+      </ul>
+    </div>
+
+    <!-- BOOK PERSONNEL -->
+    <h3>7. Book personnel (bibliotheque privee)</h3>
+
+    <div class="screen-spec">
+      <div class="screen-name">Mon Book SANZIA</div>
+      <div class="screen-role">Bibliotheque personnelle de toutes les recettes capturees</div>
+      <ul>
+        <li><strong>Collections :</strong> l'utilisateur cree des dossiers (ex: "Desserts de Noel", "Batch cooking", "Pour les enfants")</li>
+        <li><strong>Tags :</strong> systeme de tags personnalises + tags automatiques (cuisine, difficulte, temps)</li>
+        <li><strong>Favoris :</strong> systeme de coeur pour les recettes preferees, acces rapide</li>
+        <li><strong>Timeline :</strong> historique chronologique des captures avec icone de source (Instagram, web, camera, YouTube...)</li>
+        <li><strong>Recherche :</strong> recherche plein texte dans ses recettes personnelles</li>
+        <li><strong>Statistiques de progression :</strong> nombre de recettes cuisinees, cuisines explorees, ingredients decouverts</li>
+        <li><strong>Synchronisation multi-appareils :</strong> meme Book sur telephone, tablette et desktop</li>
+      </ul>
+    </div>
+
+    <!-- PLANIFICATEUR -->
+    <h3>8. Planificateur / Menu</h3>
+
+    <div class="screen-spec">
+      <div class="screen-name">Mon planning de la semaine</div>
+      <div class="screen-role">Organiser ses repas et generer sa liste de courses</div>
+      <ul>
+        <li><strong>Planificateur semaine :</strong> vue calendaire avec petit-dejeuner, dejeuner, gouter, diner</li>
+        <li><strong>Drag & drop :</strong> glisser une recette du Book vers un creneau</li>
+        <li><strong>Suggestion AI :</strong> "Completez votre semaine" propose des recettes equilibrees selon GEMRCN</li>
+        <li><strong>Liste de courses automatique :</strong> generee depuis le planning, groupee par rayon de supermarche</li>
+        <li><strong>Budget par repas / par semaine :</strong> estimation du cout total basee sur les prix reels</li>
+        <li><strong>Partage du planning :</strong> envoyer le menu de la semaine a sa famille</li>
+      </ul>
+    </div>
+
+    <!-- RESTAURANT & MEMOIRE -->
+    <h3>9. Restaurant & Memoire culinaire</h3>
+
+    <div class="screen-spec">
+      <div class="screen-name">Mon carnet de restaurants</div>
+      <div class="screen-role">Se souvenir de chaque experience culinaire</div>
+      <ul>
+        <li><strong>Scan menu restaurant :</strong> photo de la carte = extraction automatique des plats</li>
+        <li><strong>Detection automatique :</strong> nom du restaurant, adresse, geolocalisation, photos du lieu</li>
+        <li><strong>Fiche restaurant :</strong> ce que j'ai mange, ce que j'ai aime, mes notes personnelles</li>
+        <li><strong>Carnet d'adresses culinaire :</strong> liste de tous les restaurants visites, classables, cherchables</li>
+        <li><strong>Carte du monde personnelle :</strong> mes restaurants, mes plats, mes voyages culinaires, sur une carte interactive</li>
+        <li><strong>Recette "inspiree par" :</strong> photo d'un plat au restaurant = SANZIA genere une recette maison qui s'en inspire</li>
+      </ul>
+    </div>
+
+    <div class="vision-quote">
+      <p>&laquo; SANZIA devient la memoire culinaire de ta vie. Chaque restaurant, chaque plat goute, chaque voyage, tout est la. Pour toujours. &raquo;</p>
+      <div class="attribution">Nicolas Bertin, Vision memoire culinaire, 30 mars 2026</div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ──────────────────────────────────────────────────────────
+       SECTION 6: DESIGN PRINCIPES ET REFERENCES
+       ────────────────────────────────────────────────────────── -->
+  <section class="section" id="s6">
+    <div class="section-number">Section 06</div>
+    <h2>Design : principes, references et direction artistique</h2>
+
+    <p>
+      Le design de SANZIA n'est pas une question de joli. C'est une question de sensation. Chaque ecran doit provoquer l'envie de cuisiner. Pas l'envie de scroller. L'envie d'agir.
+    </p>
+
+    <h3>Les 5 commandements du design SANZIA</h3>
+
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-title">1. Sobriete</div>
+        <p>Peu d'elements, beaucoup d'espace. Chaque composant a un role. Si on ne peut pas justifier sa presence en une phrase, il disparait.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-title">2. Clarte</div>
+        <p>L'utilisateur comprend ce qu'il peut faire en moins de 2 secondes. Pas de double interpretation, pas de menus caches, pas de gestes secrets.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-title">3. Respiration</div>
+        <p>Les marges sont genereuses. Le texte respire. Les images ont de l'air autour d'elles. L'app ne donne jamais l'impression d'etre surchargee.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-title">4. Chaleur</div>
+        <p>Palette Heritage Book : creme, terracotta, nuances chaudes. Pas de gris froid, pas de blanc clinique. L'app evoque un beau livre de cuisine, pas un tableau de bord.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-title">5. Vie</div>
+        <p>L'app est vivante. Les elements reagissent au toucher, les transitions sont fluides, les animations sont subtiles mais presentes. Jamais statique, jamais plate.</p>
+      </div>
+    </div>
+
+    <div class="vision-quote">
+      <p>&laquo; Sobriete, clarte, respiration. Ce ne doit etre ni un blog recette, ni un tableau Excel nutritionnel. L'utilisateur doit ressentir : ici, je vais apprendre quelque chose, pas juste consommer du contenu. &raquo;</p>
+      <div class="attribution">Nicolas Bertin, Email SANZIA, 1 avril 2026</div>
+    </div>
+
+    <h3>Ce qui manque aujourd'hui : "l'etincelle"</h3>
+
+    <p>
+      Nicolas a identifie que les maquettes precedentes manquaient d'un element essentiel : l'etincelle qui fait passer de "c'est bien" a "je vais cuisiner ca maintenant". Cette etincelle vient de :
+    </p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Ingredient de l'etincelle</th>
+            <th>Comment on le cree</th>
+            <th>Exemple concret</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>La photo qui donne faim</strong></td>
+            <td>Images hero plein ecran, haute resolution, eclairage chaud</td>
+            <td>Un tajine fumant, gros plan, couleurs saturees, on sent presque l'odeur</td>
+          </tr>
+          <tr>
+            <td><strong>L'urgence positive</strong></td>
+            <td>"Ce soir, cuisinez ceci" plutot que "Parcourez notre catalogue"</td>
+            <td>Recette du jour basee sur la saison, l'heure, le profil</td>
+          </tr>
+          <tr>
+            <td><strong>La progression visible</strong></td>
+            <td>L'utilisateur voit son avancement, ses badges, son niveau monter</td>
+            <td>Barre de progression "Cuisines du monde explorees : 12/130 pays"</td>
+          </tr>
+          <tr>
+            <td><strong>La surprise</strong></td>
+            <td>Contenu inattendu, decouverte de cuisines inconnues</td>
+            <td>"Saviez-vous que la cuisine peruvienne utilise 3000 varietes de pommes de terre ?"</td>
+          </tr>
+          <tr>
+            <td><strong>Le retour</strong></td>
+            <td>Une raison de revenir chaque jour</td>
+            <td>Nouvelle recette du jour, defi hebdomadaire, streak a maintenir</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Reference : Flavora.fr</h3>
+    <p>Nicolas a identifie Flavora comme reference de design. Notre analyse approfondie :</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Element Flavora</th>
+            <th>Pertinence SANZIA</th>
+            <th>Adaptation SANZIA</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Dashboard progression (87%, XP, barres)</td>
+            <td>Directement applicable</td>
+            <td>Progression culinaire (techniques, cuisines, recettes), pas nutritionnelle</td>
+          </tr>
+          <tr>
+            <td>Interface minimaliste, espaces genereux</td>
+            <td>Parfaitement aligne</td>
+            <td>Sobriete SANZIA : moins de donnees, plus d'emotion</td>
+          </tr>
+          <tr>
+            <td>Palette chaude (orange/creme)</td>
+            <td>A adapter</td>
+            <td>Palette Heritage Book : creme, terracotta, touches dorres. Plus raffinee, moins "app fitness"</td>
+          </tr>
+          <tr>
+            <td>Compteur calories/macros</td>
+            <td>Secondaire chez SANZIA</td>
+            <td>Les donnees nutritionnelles existent mais ne sont pas le hero. SANZIA enseigne, ne compte pas.</td>
+          </tr>
+          <tr>
+            <td>Suivi par repas</td>
+            <td>Utile</td>
+            <td>Ajouter le "pourquoi" pedagogique : pas juste "dejeuner", mais "ce que vous avez appris"</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p><strong>Conclusion :</strong> Flavora est un tracker nutritionnel magnifiquement designe. SANZIA est une ecole culinaire. On emprunte la qualite visuelle et la progression gamifiee, mais le contenu est radicalement different.</p>
+
+    <h3>Retours de Jerome (beta testeur)</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Feedback Jerome</th>
+            <th>Decision prise</th>
+            <th>Impact sur le design</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>"Capturez" arrive trop tot dans l'onboarding</td>
+            <td>Accepte : l'onboarding commence par le profil, pas par la capture</td>
+            <td>Ecran 1 = langue, Ecran 2 = profil, Ecran 3 = niveau. Capture = homepage</td>
+          </tr>
+          <tr>
+            <td>Besoin d'un personnage guide ("le Chef")</td>
+            <td>Accepte : introduction du Chef des l'ecran 3</td>
+            <td>Le Chef est le fil rouge de l'experience. Il guide, conseille, felicite.</td>
+          </tr>
+          <tr>
+            <td>Questions profil : choix multiple, pas unique</td>
+            <td>Accepte : "Pour qui cuisinez-vous ?" devient multi-choix</td>
+            <td>Checkboxes au lieu de radio buttons, meilleure personnalisation</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Palette et typographie SANZIA</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Element</th>
+            <th>Valeur</th>
+            <th>Usage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Couleur primaire</td>
+            <td>Terracotta (#c4654a)</td>
+            <td>Accents, boutons principaux, liens actifs</td>
+          </tr>
+          <tr>
+            <td>Fond principal</td>
+            <td>Creme (#faf8f4)</td>
+            <td>Background global, sensation papier ancien</td>
+          </tr>
+          <tr>
+            <td>Texte principal</td>
+            <td>Encre (#1a1a1a)</td>
+            <td>Titres, texte important</td>
+          </tr>
+          <tr>
+            <td>Texte secondaire</td>
+            <td>Encre legere (#4a4a4a)</td>
+            <td>Paragraphes, descriptions</td>
+          </tr>
+          <tr>
+            <td>Couleur succes</td>
+            <td>Sauge (#5a7a5a)</td>
+            <td>Validations, progression, elements positifs</td>
+          </tr>
+          <tr>
+            <td>Couleur premium</td>
+            <td>Or (#b89840)</td>
+            <td>Elements premium, recompenses, trophees</td>
+          </tr>
+          <tr>
+            <td>Typographie titres</td>
+            <td>Playfair Display (serif)</td>
+            <td>Titres de recettes, titres de sections, noms de cuisines</td>
+          </tr>
+          <tr>
+            <td>Typographie corps</td>
+            <td>Inter (sans-serif)</td>
+            <td>Corps de texte, ingredients, instructions, interface</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="response">
+      <div class="response-label">Principe directeur</div>
+      <p>Le design doit etre "addictif dans le bon sens" (Nicolas). L'utilisateur est surpris, il veut revenir, il ressent une progression, il voit son avancement. Ce n'est pas une accumulation de contenu. C'est une experience qui donne envie d'AGIR.</p>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ──────────────────────────────────────────────────────────
+       SECTION 7: DIFFERENCIATION VS MARCHE
+       ────────────────────────────────────────────────────────── -->
+  <section class="section" id="s7">
+    <div class="section-number">Section 07</div>
+    <h2>Differenciation vs marche, analyse concurrentielle exhaustive</h2>
+
+    <p>
+      Le marche des applications de recettes est sature d'outils qui font tous la meme chose : stocker des liens. SANZIA ne joue pas dans cette categorie. Voici l'analyse exhaustive de la concurrence sur 15 dimensions.
+    </p>
+
+    <div class="vision-quote">
+      <p>&laquo; Les acteurs actuels partent tous du meme point d'entree. L'utilisateur ouvre l'application, puis importe une recette. Ce modele cree une friction inutile. SANZIA inverse le paradigme : l'app existe la ou l'utilisateur est deja. &raquo;</p>
+      <div class="attribution">Nicolas Bertin, Analyse concurrentielle, 30 mars 2026</div>
+    </div>
+
+    <h3>Matrice concurrentielle complete : 15 dimensions</h3>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th style="width:22%">Dimension</th>
+            <th>Citron</th>
+            <th>Paprika</th>
+            <th>Samsung Food</th>
+            <th>Flavora</th>
+            <th>Yummly</th>
+            <th style="background:var(--accent-light);">SANZIA</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Share Sheet natif</strong></td>
+            <td class="check">Oui</td>
+            <td class="check">Oui</td>
+            <td class="cross">Non</td>
+            <td class="cross">Non</td>
+            <td class="cross">Non</td>
+            <td class="star">Oui + detection auto</td>
+          </tr>
+          <tr>
+            <td><strong>Capture video (YT, TikTok)</strong></td>
+            <td class="check">Basique</td>
+            <td class="cross">Non</td>
+            <td class="cross">Non</td>
+            <td class="cross">Non</td>
+            <td class="cross">Non</td>
+            <td class="star">Audio AI + Vision AI</td>
+          </tr>
+          <tr>
+            <td><strong>Capture manuscrit</strong></td>
+            <td class="cross">Non</td>
+            <td class="cross">Non</td>
+            <td class="cross">Non</td>
+            <td class="cross">Non</td>
+            <td class="cross">Non</td>
+            <td class="star">OCR manuscrit AI</td>
+          </tr>
+          <tr>
+            <td><strong>Capture photo (livre, menu)</strong></td>
+            <td class="cross">Non</td>
+            <td class="cross">Non</td>
+            <td class="cross">Non</td>
+            <td class="cross">Non</td>
+            <td class="cross">Non</td>
+            <td class="star">OCR + Vision multi-format</td>
+          </tr>
+          <tr>
+            <td><strong>Traduction culinaire contextuelle</strong></td>
+            <td class="cross">Non</td>
+            <td class="cross">Non</td>
+            <td class="cross">Non</td>
+            <td class="cross">Non</td>
+            <td class="cross">Non</td>
+            <td class="star">Exclusif SANZIA</td>
+          </tr>
+          <tr>
+            <td><strong>Multilingue (&gt;5 langues)</strong></td>
+            <td class="cross">FR/EN</td>
+            <td class="cross">EN</td>
+            <td class="check">Multi</td>
+            <td class="cross">FR</td>
+            <td class="check">EN/DE/ES</td>
+            <td class="star">20+ langues, RTL, CJK</td>
+          </tr>
+          <tr>
+            <td><strong>Extension desktop</strong></td>
+            <td class="cross">Non</td>
+            <td class="check">Oui</td>
+            <td class="cross">Non</td>
+            <td class="cross">Non</td>
+            <td class="cross">Non</td>
+            <td class="star">Chrome + Safari + Firefox</td>
+          </tr>
+          <tr>
+            <td><strong>Memoire restaurant</strong></td>
+            <td class="cross">Non</td>
+            <td class="cross">Non</td>
+            <td class="cross">Non</td>
+            <td class="cross">Non</td>
+            <td class="cross">Non</td>
+            <td class="star">Exclusif SANZIA</td>
+          </tr>
+          <tr>
+            <td><strong>Pedagogie (POURQUOI)</strong></td>
+            <td class="cross">Non</td>
+            <td class="cross">Non</td>
+            <td class="cross">Non</td>
+            <td class="cross">Non</td>
+            <td class="cross">Non</td>
+            <td class="star">Explications par etape</td>
+          </tr>
+          <tr>
+            <td><strong>Impact CO2 / environnement</strong></td>
+            <td class="cross">Non</td>
+            <td class="cross">Non</td>
+            <td class="cross">Non</td>
+            <td class="cross">Non</td>
+            <td class="cross">Non</td>
+            <td class="star">Score Agribalyse</td>
+          </tr>
+          <tr>
+            <td><strong>Assistant vocal cuisine</strong></td>
+            <td class="cross">Non</td>
+            <td class="cross">Non</td>
+            <td class="cross">Non</td>
+            <td class="cross">Non</td>
+            <td class="cross">Non</td>
+            <td class="star">"OK Chef" mains libres</td>
+          </tr>
+          <tr>
+            <td><strong>Planning repas AI</strong></td>
+            <td class="cross">Non</td>
+            <td class="cross">Non</td>
+            <td class="check">Basique</td>
+            <td class="cross">Non</td>
+            <td class="check">Basique</td>
+            <td class="star">AI + budget + GEMRCN</td>
+          </tr>
+          <tr>
+            <td><strong>Gamification / progression</strong></td>
+            <td class="cross">Non</td>
+            <td class="cross">Non</td>
+            <td class="cross">Non</td>
+            <td class="check">Oui (nutrition)</td>
+            <td class="cross">Non</td>
+            <td class="star">Niveaux + badges + streaks</td>
+          </tr>
+          <tr>
+            <td><strong>Catalogue recettes pre-charge</strong></td>
+            <td class="cross">User only</td>
+            <td class="cross">User only</td>
+            <td class="check">Oui</td>
+            <td class="cross">Non</td>
+            <td class="check">Oui</td>
+            <td class="star">1,39M+ recettes curees</td>
+          </tr>
+          <tr>
+            <td><strong>Detection allergenes</strong></td>
+            <td class="cross">Non</td>
+            <td class="cross">Non</td>
+            <td class="cross">Non</td>
+            <td class="cross">Non</td>
+            <td class="cross">Non</td>
+            <td class="star">14 allergenes EU</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="stat-grid" style="grid-template-columns: repeat(3, 1fr);">
+      <div class="competitive-highlight">
+        <div class="highlight-number">15/15</div>
+        <div class="highlight-label">Dimensions couvertes par SANZIA</div>
+      </div>
+      <div class="competitive-highlight">
+        <div class="highlight-number">3/15</div>
+        <div class="highlight-label">Meilleur concurrent (Citron)</div>
+      </div>
+      <div class="competitive-highlight">
+        <div class="highlight-number">8</div>
+        <div class="highlight-label">Fonctions exclusives SANZIA</div>
+      </div>
+    </div>
+
+    <h3>Les 4 angles d'innovation de SANZIA</h3>
+
+    <div class="feature-grid">
+      <div class="feature-card" style="border-left: 3px solid var(--accent);">
+        <div class="feature-title">1. Traduction culinaire contextuelle</div>
+        <p>Les apps traduisent "cream" par "creme". SANZIA sait que dans une recette britannique, c'est de la creme epaisse, dans une americaine, de la heavy cream, dans une indienne, du malai. Les quantites s'adaptent, les ingredients equivalents locaux sont proposes.</p>
+      </div>
+      <div class="feature-card" style="border-left: 3px solid var(--sage);">
+        <div class="feature-title">2. Multilinguisme reel</div>
+        <p>Pas 2 langues, pas 5. Plus de 20 langues prevues, avec support RTL (arabe, hebreu), support CJK (chinois, japonais, coreen) et adaptation typographique native. L'architecture i18n est dans l'ADN du code, pas ajoutee apres.</p>
+      </div>
+      <div class="feature-card" style="border-left: 3px solid var(--gold);">
+        <div class="feature-title">3. Desktop first-class</div>
+        <p>Personne ne traite serieusement le desktop. Les gens trouvent des recettes sur leur ordinateur. SANZIA a une extension navigateur qui detecte automatiquement les recettes et les sauvegarde en un clic, synchronisees avec le mobile.</p>
+      </div>
+      <div class="feature-card" style="border-left: 3px solid var(--navy);">
+        <div class="feature-title">4. Memoire restaurant / voyage</div>
+        <p>Aucune app ne memorise vos experiences de restaurant. SANZIA scanne les menus, retient ce que vous avez mange, note vos impressions, et place tout sur une carte du monde personnelle. C'est la memoire culinaire d'une vie.</p>
+      </div>
+    </div>
+
+    <div class="vision-quote">
+      <p>&laquo; Personne aujourd'hui n'est positionne la-dessus. On ne parle pas d'une amelioration incrementale. On parle d'un changement de paradigme complet. &raquo;</p>
+      <div class="attribution">Nicolas Bertin, Conclusion strategique, 30 mars 2026</div>
+    </div>
+
+    <h3>Pourquoi les concurrents ne peuvent pas nous rattraper</h3>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Barriere</th>
+            <th>Description</th>
+            <th>Temps pour un concurrent</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Base de donnees</strong></td>
+            <td>1,39M recettes structurees, enrichies, avec nutrition, cout, CO2, allergenes</td>
+            <td>12-18 mois minimum pour constituer</td>
+          </tr>
+          <tr>
+            <td><strong>Infrastructure AI</strong></td>
+            <td>Moteurs d'extraction multi-sources, traduction contextuelle, coaching</td>
+            <td>6-12 mois de R&D</td>
+          </tr>
+          <tr>
+            <td><strong>Donnees nutritionnelles</strong></td>
+            <td>23 376 ingredients mappes CIQUAL + Agribalyse</td>
+            <td>6 mois de travail data</td>
+          </tr>
+          <tr>
+            <td><strong>Ecosysteme</strong></td>
+            <td>OptiMenu, Petit Cook, OptiRecipe : synergie unique</td>
+            <td>Impossible a reproduire (propriete Nicolas)</td>
+          </tr>
+          <tr>
+            <td><strong>Multilinguisme</strong></td>
+            <td>Architecture i18n native, pas ajoutee apres coup</td>
+            <td>Refonte complete pour les concurrents</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ──────────────────────────────────────────────────────────
+       SECTION 8: FEUILLE DE ROUTE (was s5)
+       ────────────────────────────────────────────────────────── -->
+  <section class="section" id="s8">
+    <div class="section-number">Section 08</div>
     <h2>Feuille de route detaillee, 12 mois</h2>
 
     <p>
@@ -1424,134 +2591,558 @@
   <div class="divider"></div>
 
   <!-- ──────────────────────────────────────────────────────────
-       SECTION 6: CONCURRENCE
+       SECTION 9: FEUILLE DE ROUTE TECHNIQUE DETAILLEE
        ────────────────────────────────────────────────────────── -->
-  <section class="section" id="s6">
-    <div class="section-number">Section 06</div>
-    <h2>Positionnement concurrentiel</h2>
+  <section class="section" id="s9">
+    <div class="section-number">Section 09</div>
+    <h2>Feuille de route technique detaillee, semaine par semaine</h2>
 
     <p>
-      Votre cartographie fonctionnelle (section 6 de votre vision) est exacte. Voici comment SANZIA se positionne face a chaque concurrent sur chaque dimension.
+      Ce calendrier detaille decompose les 6 premiers mois de developpement en livrables hebdomadaires concrets. Chaque semaine a un objectif mesurable et un livrable testable.
     </p>
 
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr>
-            <th style="width: 30%">Fonction</th>
-            <th>Citron</th>
-            <th>Paprika</th>
-            <th>Samsung Food</th>
-            <th style="background: var(--accent-light);">SANZIA</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>Share Extension (reflexe)</strong></td>
-            <td class="check">Oui</td>
-            <td class="check">Oui</td>
-            <td class="cross">Non</td>
-            <td class="star">Oui + detection auto</td>
-          </tr>
-          <tr>
-            <td><strong>Capture video (YouTube, TikTok)</strong></td>
-            <td class="check">Oui</td>
-            <td class="cross">Non</td>
-            <td class="cross">Non</td>
-            <td class="star">Oui + extraction audio AI</td>
-          </tr>
-          <tr>
-            <td><strong>Capture manuscrit</strong></td>
-            <td class="cross">Non</td>
-            <td class="cross">Non</td>
-            <td class="cross">Non</td>
-            <td class="star">Oui (OCR AI)</td>
-          </tr>
-          <tr>
-            <td><strong>Traduction culinaire contextuelle</strong></td>
-            <td class="cross">Non</td>
-            <td class="cross">Non</td>
-            <td class="cross">Non</td>
-            <td class="star">Exclusif SANZIA</td>
-          </tr>
-          <tr>
-            <td><strong>Multilingue (&gt;5 langues)</strong></td>
-            <td class="cross">FR/EN</td>
-            <td class="cross">EN</td>
-            <td class="check">Multi</td>
-            <td class="star">20+ langues, tous scripts</td>
-          </tr>
-          <tr>
-            <td><strong>Desktop extension</strong></td>
-            <td class="cross">Non</td>
-            <td class="check">Oui</td>
-            <td class="cross">Non</td>
-            <td class="star">Chrome + Safari + Firefox</td>
-          </tr>
-          <tr>
-            <td><strong>Memoire restaurant</strong></td>
-            <td class="cross">Non</td>
-            <td class="cross">Non</td>
-            <td class="cross">Non</td>
-            <td class="star">Exclusif SANZIA</td>
-          </tr>
-          <tr>
-            <td><strong>Recettes pedagogiques</strong></td>
-            <td class="cross">Non</td>
-            <td class="cross">Non</td>
-            <td class="cross">Non</td>
-            <td class="star">Pourquoi de l'etape, gestes, progression</td>
-          </tr>
-          <tr>
-            <td><strong>Impact environnemental</strong></td>
-            <td class="cross">Non</td>
-            <td class="cross">Non</td>
-            <td class="cross">Non</td>
-            <td class="star">Score CO2 Agribalyse</td>
-          </tr>
-          <tr>
-            <td><strong>Assistant vocal cuisine</strong></td>
-            <td class="cross">Non</td>
-            <td class="cross">Non</td>
-            <td class="cross">Non</td>
-            <td class="star">"OK Chef" mains libres</td>
-          </tr>
-          <tr>
-            <td><strong>Planning repas AI</strong></td>
-            <td class="cross">Non</td>
-            <td class="cross">Non</td>
-            <td class="check">Basique</td>
-            <td class="star">AI + budget + GEMRCN + CO2</td>
-          </tr>
-          <tr>
-            <td><strong>Catalogue recettes</strong></td>
-            <td class="cross">User only</td>
-            <td class="cross">User only</td>
-            <td class="check">Oui</td>
-            <td class="star">1,34M+ recettes curees</td>
-          </tr>
-        </tbody>
-      </table>
+    <h3>Mois 1 : Avril 2026 &mdash; Fondations</h3>
+
+    <div class="week-block">
+      <div class="week-label">Semaine 1 (1-7 avril)</div>
+      <div class="week-title">Setup projet et design system</div>
+      <ul>
+        <li>Initialisation projet React Native (Expo) avec TypeScript strict</li>
+        <li>Architecture de navigation (React Navigation 7, bottom tabs + stack)</li>
+        <li>Design system tokens : couleurs Heritage Book, typographies, espacements, rayons</li>
+        <li>Composants de base : Button, Input, Card, Typography, Icon system</li>
+      </ul>
     </div>
 
-    <div class="vision-quote">
-      <p>&laquo; Personne aujourd'hui n'est positionne la-dessus. &raquo;</p>
-      <div class="attribution">Nicolas Bertin, Conclusion strategique, 30 mars 2026</div>
+    <div class="week-block">
+      <div class="week-label">Semaine 2 (8-14 avril)</div>
+      <div class="week-title">Authentification et onboarding</div>
+      <ul>
+        <li>Flow d'authentification OTP (magic link email, pas de mot de passe)</li>
+        <li>3 ecrans d'onboarding : langue, profil, niveau + introduction du Chef</li>
+        <li>Selecteur de langue avec detection automatique (Expo Localization)</li>
+        <li>Stockage local securise (SecureStore) pour session utilisateur</li>
+      </ul>
     </div>
 
-    <div class="response">
-      <div class="response-label">Synthese concurrentielle</div>
-      <p>12 dimensions comparees. SANZIA est le seul a couvrir les 12. Le deuxieme meilleur (Citron) en couvre 3. Le fosse est structurel, pas cosmetique : il vient de la base de donnees (1,34M recettes enrichies), de l'AI (traduction contextuelle, extraction universelle) et de l'ecosysteme (OptiMenu, Petit Cook, OptiRecipe).</p>
+    <div class="week-block">
+      <div class="week-label">Semaine 3 (15-21 avril)</div>
+      <div class="week-title">Homepage et carte du monde</div>
+      <ul>
+        <li>Homepage capture-first : hero visuel, 3 boutons d'action, recette du jour</li>
+        <li>Carte du monde interactive (react-native-maps ou WebView MapboxGL)</li>
+        <li>Pays animes, compteurs de recettes, tap pour explorer une cuisine</li>
+        <li>Connection API OptiRecipe pour les donnees recettes</li>
+      </ul>
+    </div>
+
+    <div class="week-block">
+      <div class="week-label">Semaine 4 (22-30 avril)</div>
+      <div class="week-title">Detail recette et mode cuisiner v1</div>
+      <ul>
+        <li>Ecran detail recette complet : hero, ingredients, etapes, nutrition</li>
+        <li>Mode Cuisiner v1 : plein ecran, fond sombre, texte large, navigation swipe</li>
+        <li>Minuteur integre par etape, alerte sonore a la fin</li>
+        <li>Mode veille desactive pendant la cuisson (expo-keep-awake)</li>
+        <li>Premier build TestFlight pour test interne</li>
+      </ul>
+    </div>
+
+    <h3>Mois 2 : Mai 2026 &mdash; Capture core</h3>
+
+    <div class="week-block">
+      <div class="week-label">Semaine 5 (1-7 mai)</div>
+      <div class="week-title">Capture camera (OCR + AI Vision)</div>
+      <ul>
+        <li>Integration camera (expo-camera) avec cadrage assiste</li>
+        <li>OCR haute precision pour pages imprimees (Tesseract + fallback AI Vision)</li>
+        <li>AI Vision pour livres de cuisine : extraction structuree ingredients + etapes</li>
+        <li>Pipeline de normalisation : texte brut vers format recette structure</li>
+      </ul>
+    </div>
+
+    <div class="week-block">
+      <div class="week-label">Semaine 6 (8-14 mai)</div>
+      <div class="week-title">Import URL</div>
+      <ul>
+        <li>Extraction JSON-LD (schema.org Recipe) pour sites structures</li>
+        <li>Fallback AI pour sites non structures (microdata, heuristique)</li>
+        <li>Support de plus de 200 sites de recettes majeurs</li>
+        <li>Champ "Coller un lien" sur l'ecran de capture</li>
+      </ul>
+    </div>
+
+    <div class="week-block">
+      <div class="week-label">Semaine 7 (15-21 mai)</div>
+      <div class="week-title">Share Extension (iOS + Android)</div>
+      <ul>
+        <li>Share Extension iOS native (Swift bridge via Expo modules)</li>
+        <li>Share Sheet Android (Intent filter, Expo config plugin)</li>
+        <li>SANZIA apparait dans le menu Partager de toute app</li>
+        <li>Traitement en arriere-plan, notification push quand pret</li>
+      </ul>
+    </div>
+
+    <div class="week-block">
+      <div class="week-label">Semaine 8 (22-31 mai)</div>
+      <div class="week-title">Book personnel et collections</div>
+      <ul>
+        <li>Ecran Book : grille de recettes capturees, tri chronologique</li>
+        <li>Collections personnalisees (creer, renommer, supprimer)</li>
+        <li>Systeme de favoris (coeur), tags automatiques</li>
+        <li>Recherche plein texte dans le Book personnel</li>
+      </ul>
+    </div>
+
+    <h3>Mois 3 : Juin 2026 &mdash; Intelligence</h3>
+
+    <div class="week-block">
+      <div class="week-label">Semaine 9 (1-7 juin)</div>
+      <div class="week-title">Moteur de coaching AI</div>
+      <ul>
+        <li>Suggestions contextuelles basees sur le profil, l'heure, la saison</li>
+        <li>"Le Chef" propose des recettes adaptees au niveau de l'utilisateur</li>
+        <li>Integration Claude API pour les recommandations intelligentes</li>
+      </ul>
+    </div>
+
+    <div class="week-block">
+      <div class="week-label">Semaine 10 (8-14 juin)</div>
+      <div class="week-title">Enrichissement nutritionnel</div>
+      <ul>
+        <li>Integration donnees CIQUAL sur chaque recette capturee</li>
+        <li>Integration Agribalyse pour le score CO2</li>
+        <li>Panel nutrition sur la fiche recette : calories, macros, fibres</li>
+        <li>Score environnemental visuel (A/B/C/D/E)</li>
+      </ul>
+    </div>
+
+    <div class="week-block">
+      <div class="week-label">Semaine 11 (15-21 juin)</div>
+      <div class="week-title">Allergenes et regimes</div>
+      <ul>
+        <li>Detection automatique des 14 allergenes (EU 1169/2011)</li>
+        <li>Filtrage par regime : vegetarien, vegan, sans gluten, halal, kasher</li>
+        <li>Alertes allergenes personnalisees selon le profil utilisateur</li>
+      </ul>
+    </div>
+
+    <div class="week-block">
+      <div class="week-label">Semaine 12 (22-30 juin)</div>
+      <div class="week-title">Traduction culinaire contextuelle</div>
+      <ul>
+        <li>Moteur de traduction culinaire alimente par LLM custom</li>
+        <li>Equivalences culturelles (cream = creme fraiche/heavy cream/malai selon contexte)</li>
+        <li>Adaptation automatique des quantites selon le pays</li>
+        <li>Proposition d'ingredients equivalents locaux</li>
+      </ul>
+    </div>
+
+    <h3>Mois 4 : Juillet 2026 &mdash; Engagement</h3>
+
+    <div class="week-block">
+      <div class="week-label">Semaine 13 (1-7 juillet)</div>
+      <div class="week-title">Gamification</div>
+      <ul>
+        <li>Systeme de niveaux (Apprenti, Commis, Cuisinier, Chef de partie, Chef)</li>
+        <li>Trophees et badges (premier plat, 10 cuisines explorees, 7 jours consecutifs)</li>
+        <li>Points d'experience (XP) pour chaque recette cuisinee</li>
+        <li>Ecran Profil avec progression visuelle</li>
+      </ul>
+    </div>
+
+    <div class="week-block">
+      <div class="week-label">Semaine 14 (8-14 juillet)</div>
+      <div class="week-title">SANZIA Academy v1</div>
+      <ul>
+        <li>10 premiers modules d'apprentissage : les bases de la cuisine</li>
+        <li>Modules : assaisonnement, cuissons, sauces, patisserie de base, equilibre nutritionnel...</li>
+        <li>Quiz de validation par module</li>
+        <li>Integration avec le systeme de progression</li>
+      </ul>
+    </div>
+
+    <div class="week-block">
+      <div class="week-label">Semaine 15 (15-21 juillet)</div>
+      <div class="week-title">Mode Cuisiner v2</div>
+      <ul>
+        <li>Minuteurs multiples simultanees</li>
+        <li>Preparation de l'integration vocale (architecture audio pipeline)</li>
+        <li>Navigation gestuelle (detection de mouvement camera, experimentale)</li>
+        <li>Ameliorations UX basees sur retours beta testeurs</li>
+      </ul>
+    </div>
+
+    <div class="week-block">
+      <div class="week-label">Semaine 16 (22-31 juillet)</div>
+      <div class="week-title">Notifications et re-engagement</div>
+      <ul>
+        <li>Push notifications contextuelles (recette du jour, rappel streak)</li>
+        <li>Boucles de re-engagement intelligentes (pas de spam, frequence adaptative)</li>
+        <li>Soumission App Store (Apple + Google) pour revue</li>
+      </ul>
+    </div>
+
+    <h3>Mois 5 : Aout 2026 &mdash; Croissance</h3>
+
+    <div class="week-block">
+      <div class="week-label">Semaine 17 (1-7 aout)</div>
+      <div class="week-title">Planificateur de repas</div>
+      <ul>
+        <li>Vue calendaire semaine (petit-dejeuner, dejeuner, diner)</li>
+        <li>Drag & drop des recettes du Book vers le planning</li>
+        <li>Suggestion AI "Completez votre semaine"</li>
+      </ul>
+    </div>
+
+    <div class="week-block">
+      <div class="week-label">Semaine 18 (8-14 aout)</div>
+      <div class="week-title">Capture restaurant et memoire culinaire</div>
+      <ul>
+        <li>Scan de carte/menu restaurant via camera</li>
+        <li>Detection automatique nom restaurant, adresse, geolocalisation</li>
+        <li>Fiche restaurant avec notes personnelles, photos, plats commandes</li>
+        <li>Carte du monde personnelle des restaurants visites</li>
+      </ul>
+    </div>
+
+    <div class="week-block">
+      <div class="week-label">Semaine 19 (15-21 aout)</div>
+      <div class="week-title">Fonctions sociales</div>
+      <ul>
+        <li>Partager une recette par lien (avec preview riche et lien de telechargement SANZIA)</li>
+        <li>Profils publics, suivre d'autres cuisiniers</li>
+        <li>Collections partagees (cuisine en famille, entre amis)</li>
+      </ul>
+    </div>
+
+    <div class="week-block">
+      <div class="week-label">Semaine 20 (22-31 aout)</div>
+      <div class="week-title">Lancement App Store</div>
+      <ul>
+        <li>Lancement simultane iOS App Store + Google Play Store</li>
+        <li>Fiches App Store optimisees (ASO) en francais et anglais</li>
+        <li>Campagne de lancement : beta testeurs + premiers utilisateurs organiques</li>
+      </ul>
+    </div>
+
+    <h3>Mois 6 : Septembre 2026 &mdash; Scale</h3>
+
+    <div class="week-block">
+      <div class="week-label">Semaine 21 (1-7 septembre)</div>
+      <div class="week-title">Abonnement Premium</div>
+      <ul>
+        <li>Integration RevenueCat pour gestion abonnements in-app</li>
+        <li>Paywall Premium avec essai gratuit 7 jours</li>
+        <li>Deblocage des fonctions premium : AI coaching, voice, Academy complete</li>
+      </ul>
+    </div>
+
+    <div class="week-block">
+      <div class="week-label">Semaine 22 (8-14 septembre)</div>
+      <div class="week-title">SANZIA Pro B2B</div>
+      <ul>
+        <li>Dashboard administrateur pour restaurants et ecoles</li>
+        <li>Gestion des menus, standardisation des recettes</li>
+        <li>Premiers contacts B2B pilotes</li>
+      </ul>
+    </div>
+
+    <div class="week-block">
+      <div class="week-label">Semaine 23 (15-21 septembre)</div>
+      <div class="week-title">Application web desktop</div>
+      <ul>
+        <li>Web app React (parite avec mobile) sur app.sanzia.com</li>
+        <li>Extension Chrome/Safari pour capture depuis navigateur</li>
+        <li>Synchronisation temps reel desktop-mobile</li>
+      </ul>
+    </div>
+
+    <div class="week-block">
+      <div class="week-label">Semaine 24 (22-30 septembre)</div>
+      <div class="week-title">Expansion internationale et ASO</div>
+      <ul>
+        <li>Fiches App Store dans 10+ langues</li>
+        <li>Optimisation mots-cles par marche (ASO)</li>
+        <li>Lancement marketing international : France, US, monde arabe</li>
+        <li>Transfert progressif a l'equipe EAT pour extensions et maintenance</li>
+      </ul>
     </div>
   </section>
 
   <div class="divider"></div>
 
   <!-- ──────────────────────────────────────────────────────────
-       SECTION 7: SCALING
+       SECTION 10: MODELE ECONOMIQUE
        ────────────────────────────────────────────────────────── -->
-  <section class="section" id="s7">
-    <div class="section-number">Section 07</div>
+  <section class="section" id="s10">
+    <div class="section-number">Section 10</div>
+    <h2>Modele economique et route vers 1M EUR ARR</h2>
+
+    <p>
+      SANZIA repose sur un modele freemium avec une conversion progressive vers l'abonnement premium. L'objectif est d'atteindre 1M EUR d'ARR en moins de 12 mois apres le lancement public.
+    </p>
+
+    <h3>Structure de l'offre</h3>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th style="width:20%">Offre</th>
+            <th style="width:15%">Prix</th>
+            <th style="width:65%">Fonctionnalites incluses</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Gratuit</strong></td>
+            <td>0 EUR</td>
+            <td>50 recettes dans le Book, capture basique (URL + photo), mode cuisiner basique (swipe, sans voix), carte du monde en consultation, 2 langues</td>
+          </tr>
+          <tr>
+            <td><strong>Premium</strong></td>
+            <td>4,99 EUR/mois<br>ou 39,99 EUR/an</td>
+            <td>Recettes illimitees, AI coaching personnalise, nutrition avancee (macros, CO2, allergenes), SANZIA Academy complete, mode cuisiner vocal "OK Chef", toutes les langues, captures illimitees, collections et tags</td>
+          </tr>
+          <tr>
+            <td><strong>Pro (B2B)</strong></td>
+            <td>Sur devis</td>
+            <td>Dashboard restaurant/ecole, gestion menus et equipes, standardisation recettes, formation, audit qualite, API access, branding personnalise</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Projections de revenus mois par mois (12 mois post-lancement)</h3>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Mois</th>
+            <th>Utilisateurs totaux</th>
+            <th>Taux conversion</th>
+            <th>Abonnes Premium</th>
+            <th>MRR</th>
+            <th>ARR (rythme)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>M1</td>
+            <td>5 000</td>
+            <td>0% (gratuit)</td>
+            <td>0</td>
+            <td>0 EUR</td>
+            <td>0 EUR</td>
+          </tr>
+          <tr>
+            <td>M2</td>
+            <td>10 000</td>
+            <td>0% (gratuit)</td>
+            <td>0</td>
+            <td>0 EUR</td>
+            <td>0 EUR</td>
+          </tr>
+          <tr>
+            <td>M3</td>
+            <td>15 000</td>
+            <td>0% (gratuit)</td>
+            <td>0</td>
+            <td>0 EUR</td>
+            <td>0 EUR</td>
+          </tr>
+          <tr>
+            <td>M4</td>
+            <td>25 000</td>
+            <td>5%</td>
+            <td>1 250</td>
+            <td>6 237 EUR</td>
+            <td>74 850 EUR</td>
+          </tr>
+          <tr>
+            <td>M5</td>
+            <td>45 000</td>
+            <td>6%</td>
+            <td>2 700</td>
+            <td>13 473 EUR</td>
+            <td>161 676 EUR</td>
+          </tr>
+          <tr>
+            <td>M6</td>
+            <td>70 000</td>
+            <td>7%</td>
+            <td>4 900</td>
+            <td>24 451 EUR</td>
+            <td>293 412 EUR</td>
+          </tr>
+          <tr>
+            <td>M7</td>
+            <td>100 000</td>
+            <td>8%</td>
+            <td>8 000</td>
+            <td>39 920 EUR</td>
+            <td>479 040 EUR</td>
+          </tr>
+          <tr>
+            <td>M8</td>
+            <td>130 000</td>
+            <td>8%</td>
+            <td>10 400</td>
+            <td>51 896 EUR</td>
+            <td>622 752 EUR</td>
+          </tr>
+          <tr>
+            <td>M9</td>
+            <td>165 000</td>
+            <td>9%</td>
+            <td>14 850</td>
+            <td>74 101 EUR</td>
+            <td>889 218 EUR</td>
+          </tr>
+          <tr>
+            <td>M10</td>
+            <td>200 000</td>
+            <td>9%</td>
+            <td>18 000</td>
+            <td>89 820 EUR</td>
+            <td>1 077 840 EUR</td>
+          </tr>
+          <tr>
+            <td>M11</td>
+            <td>225 000</td>
+            <td>10%</td>
+            <td>22 500</td>
+            <td>112 275 EUR</td>
+            <td>1 347 300 EUR</td>
+          </tr>
+          <tr>
+            <td><strong>M12</strong></td>
+            <td><strong>250 000</strong></td>
+            <td><strong>10%</strong></td>
+            <td><strong>25 000</strong></td>
+            <td><strong>124 750 EUR</strong></td>
+            <td><strong>1 497 000 EUR</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="response">
+      <div class="response-label">Objectif atteint</div>
+      <p><strong>Le cap de 1M EUR ARR est franchi au mois 10</strong>, soit 2 mois avant l'objectif. Au mois 12, l'ARR projete est de ~1,5M EUR, depassant la cible initiale de 50%.</p>
+    </div>
+
+    <h3>Leviers de croissance</h3>
+
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-title">Viralite native</div>
+        <p>Chaque recette partagee contient un lien de telechargement SANZIA. Le Share Sheet est viral par nature : "comment tu as fait ?" = "j'ai juste appuye sur Partager".</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-title">Share Sheet = acquisition passive</div>
+        <p>L'utilisateur n'a pas besoin de recommander SANZIA activement. Le simple fait d'utiliser le Share Sheet expose la marque a ses contacts.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-title">ASO (App Store Optimization)</div>
+        <p>Fiches App Store optimisees dans chaque langue, screenshots localises, mots-cles adaptes par marche. Trafic organique App Store.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-title">Content marketing</div>
+        <p>Videos de recettes, conseils de cuisine, tutoriels sur TikTok et Instagram. Contenu genere par les utilisateurs (avant/apres).</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-title">Partenariats influenceurs</div>
+        <p>Collaborations avec des createurs culinaires, chefs reconnus, blogueurs food. Collections exclusives dans SANZIA.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-title">B2B / institutions</div>
+        <p>Contrats avec ecoles de cuisine, restaurants, marques alimentaires. Revenus recurrents, faible churn, forte LTV.</p>
+      </div>
+    </div>
+
+    <h3>Unit economics</h3>
+
+    <div class="stat-grid" style="grid-template-columns: repeat(4, 1fr);">
+      <div class="stat-box">
+        <div class="number">&lt;2 EUR</div>
+        <div class="unit">CAC cible</div>
+      </div>
+      <div class="stat-box">
+        <div class="number">~40 EUR</div>
+        <div class="unit">LTV (8 mois x 4,99)</div>
+      </div>
+      <div class="stat-box">
+        <div class="number">20x</div>
+        <div class="unit">Ratio LTV/CAC</div>
+      </div>
+      <div class="stat-box">
+        <div class="number">8 mois</div>
+        <div class="unit">Retention moyenne</div>
+      </div>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Metrique</th>
+            <th>Valeur cible</th>
+            <th>Benchmark industrie</th>
+            <th>Commentaire</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>CAC (Cout d'acquisition)</strong></td>
+            <td>&lt;2 EUR</td>
+            <td>3-8 EUR (apps mobile)</td>
+            <td>Viralite native + Share Sheet reduit fortement le CAC</td>
+          </tr>
+          <tr>
+            <td><strong>LTV (Lifetime Value)</strong></td>
+            <td>~40 EUR</td>
+            <td>20-50 EUR (apps abonnement)</td>
+            <td>8 mois de retention moyenne x 4,99 EUR/mois</td>
+          </tr>
+          <tr>
+            <td><strong>Ratio LTV/CAC</strong></td>
+            <td>20x</td>
+            <td>3-5x (sain)</td>
+            <td>Ratio exceptionnel grace a la viralite</td>
+          </tr>
+          <tr>
+            <td><strong>Churn mensuel</strong></td>
+            <td>&lt;5%</td>
+            <td>5-8% (apps mobile)</td>
+            <td>La gamification et les streaks reduisent le churn</td>
+          </tr>
+          <tr>
+            <td><strong>ARPU mensuel</strong></td>
+            <td>~0,50 EUR</td>
+            <td>0,30-1,00 EUR (freemium)</td>
+            <td>Melange free + premium, moyenne sur tous utilisateurs</td>
+          </tr>
+          <tr>
+            <td><strong>Taux de conversion free-to-paid</strong></td>
+            <td>8-10%</td>
+            <td>2-5% (freemium apps)</td>
+            <td>La limite a 50 recettes cree une urgence naturelle</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ──────────────────────────────────────────────────────────
+       SECTION 11: SCALING (was s7)
+       ────────────────────────────────────────────────────────── -->
+  <section class="section" id="s11">
+    <div class="section-number">Section 11</div>
     <h2>Strategie de scaling & croissance</h2>
 
     <h3>Trajectoire utilisateurs (12 mois)</h3>
@@ -1665,8 +3256,8 @@
   <!-- ──────────────────────────────────────────────────────────
        SECTION 8: EQUIPE
        ────────────────────────────────────────────────────────── -->
-  <section class="section" id="s8">
-    <div class="section-number">Section 08</div>
+  <section class="section" id="s12">
+    <div class="section-number">Section 12</div>
     <h2>Equipe, coordination & EAT</h2>
 
     <h3>Organisation</h3>
@@ -1730,8 +3321,8 @@
   <!-- ──────────────────────────────────────────────────────────
        SECTION 9: BUDGET
        ────────────────────────────────────────────────────────── -->
-  <section class="section" id="s9">
-    <div class="section-number">Section 09</div>
+  <section class="section" id="s13">
+    <div class="section-number">Section 13</div>
     <h2>Budget & investissements</h2>
 
     <h3>Couts mensuels estimes (en production)</h3>
@@ -1818,8 +3409,8 @@
   <!-- ──────────────────────────────────────────────────────────
        SECTION 10: PROCHAINES ETAPES
        ────────────────────────────────────────────────────────── -->
-  <section class="section" id="s10">
-    <div class="section-number">Section 10</div>
+  <section class="section" id="s14">
+    <div class="section-number">Section 14</div>
     <h2>Prochaines etapes immediates</h2>
 
     <p>
